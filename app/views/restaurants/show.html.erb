@@ -1,0 +1,23 @@
+<p>name : <%=@restaurant.name%></p>
+<p>phone : <%=@restaurant.phone%></p>
+<p>adress : <%=@restaurant.adress%></p>
+<p>category : <%=@restaurant.category%></p>
+
+<h1>Add a note to this restaurant</h1>
+
+
+<% @restaurant.reviews.each do |r|%>
+<ul>
+  <li>content : <%=r.content%> </li>
+  <li>rating : <%=r.rating%> </li>
+</ul>
+
+
+
+
+
+
+<%= link_to "Back restaurant's lits", restos_path%>
+
+
+

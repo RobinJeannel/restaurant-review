@@ -1,0 +1,15 @@
+<h1>Add a new restaurant</h1>
+
+<%= form_for(@restaurant) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :address %>
+  <%= f.text_field :adress %>
+  <%= f.label :phone %>
+  <%= f.text_field :phone %>
+  <%= f.label :category %>
+  <%= f.select :category, "chinese"=>"chinese", "italian"=>"italian" %>
+  <%= f.submit %>
+<% end %>
+
+<%= link_to "Back restaurant's lits", :action => "index" %>
